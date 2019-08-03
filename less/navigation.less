@@ -1,1 +1,38 @@
 // Navigation code here
+
+.navigation {
+    width: 100%;
+    margin: 0 auto;
+    background: @nav-bg;
+    border: 1px solid @nav-border;
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+
+    h1 {
+        font-size: @h1;
+        text-align: center;
+    }
+
+    nav {
+        .flexbox();
+        font-size: 1.6rem;
+        font-weight: bold;
+        justify-content: center;
+        margin: 2rem 0rem 1rem 0rem;
+        ;
+
+        a {
+            .noline();            
+            padding: 0rem 2rem;
+            color: @river-bend;
+            @media @phone {
+                padding: 0rem 1rem;
+            }
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+}
